@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Working_Food</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row" id = "label_row"><h3>*** MEAL PLANNER ***</h3></div>
+         <div class="row" id = "first_row">
+            <div  class ="col-sm-6">
+               <form id="search-form">
+                  <label for="ingrd-input">Type in main dish ingredient: </label>
+                  <input type="text" id="ingr-input"><br>
+                  <label for="drink-input">Type in drink keyword: </label>
+                  <input type="text" id="drnk-input"><br>
+                  <input id="ingredient" type="button" value="Click Me" class = "btn btn-primary">
+               </form>
+            </div>
+            <div  class ="col-sm-6">
+               <p id="highest_freq_combo"></p>
+               <p id="last_ingr"></p>
+               <p id="last_drink"></p>
+            </div>
+         </div>
+         <div class="row" >
+            <div  class ="col-sm-6">
+               <h4>Dishes</h4>
+               <div class ="row">
+                  <!--Dishes go here-->
+                  <!-- <div id ="dishes"></div> -->
+                  <div class="accordion" id="meal-accordion-list">
+                     <div class="card">
+                        <div id="meals-list-dynamic">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Dishes related to ingredient
+                  Receipe for the dish selected -->
+            <div  class ="col-sm-6">
+               <h4>Drinks</h4>
+               <div class ="row">
+                  <div class="accordion" id="drink-accordion-list">
+                     <div class="card">
+                        <div id="drink-list-dynamic">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+      <script src="assets/javascript/app.js"></script>
+   </body>
+</html>

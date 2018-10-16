@@ -1,0 +1,60 @@
+.col-sm-6{
+    border-right: 1px solid;
+}
+#dish_dtls{
+    width:95%;
+}
+img{
+    width: 500px;
+    height:500px;
+}
+#first_row{
+    border-bottom: 10px solid;
+}
+#ingredient {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: 228px;
+}
+#highest_freq_combo{
+    margin-top: 10px;
+}
+
+#drink-list-dynamic{
+    width:100%;
+    /*margin-left: 10px;*/
+}
+.dish_receipe, .card{
+    width:95%;
+}
+#dish_tbl .dish_video{
+    width:95%;
+}
+#search-form{
+    margin-top: 20px;
+}
+#ingr-input{
+    margin-left: 20px;
+}
+#drnk-input{
+    margin-left: 65px;
+}
+h3{
+    text-align: center;
+
+body{
+    background-image: url("images/background3.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow:
+   -1px -1px 0 #B3B6B7,  
+    1px -1px 0 #B3B6B7,
+    -1px 1px 0 #B3B6B7,
+     1px 1px 0 #B3B6B7;
+
+}
